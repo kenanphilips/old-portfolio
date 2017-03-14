@@ -26,6 +26,12 @@
 /* General
 ==================================================*/
 
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
 html,
 body {
     height: 100%;
@@ -33,6 +39,11 @@ body {
     line-height: 1.8;
     font-weight: 400;
     letter-spacing: 1px;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
 }
 
 .no-padding {
@@ -173,7 +184,7 @@ p, a {
 
 .navbar-default {
   border: none;
-  background: #fff;
+  background: transparent;
   border-radius: 0px;
   height: 60px;
   width: 100%;
@@ -186,6 +197,7 @@ p, a {
   -moz-box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
   -o-box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
   -ms-box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  background: #fff !important;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -292,11 +304,10 @@ p, a {
     display: table;
     height: 100vh;
     width: 100%;
-    /*background-image: url("../images/light.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;*/
-    background: #fff;
+    background-image: url("../images/pattern.svg");
+    background-size: 800px;
+    background-repeat: repeat;
+    /*background-position: center center;*/
     position: relative;
 }
 
@@ -639,7 +650,9 @@ div.about-text {
 ==================================================*/
 
 #contact {
-  background: #fff;
+  background-image: url("../images/pattern.svg");
+  background-size: 800px;
+  background-repeat: repeat;
   padding-top: 60px;
   width: 100%;
   height: 100vh;
@@ -677,6 +690,14 @@ div.about-text {
   padding: 10px 0;
   background-color: #50E3C2;
   color: #fff;
+  transition: ease-in-out .3s all;
+  -webkit-transition: ease-in-out .3s all;
+  -moz-transition: ease-in-out .3s all;
+  -o-transition: ease-in-out .3s all;
+}
+
+#contact-button:hover {
+  opacity: 0.8;
 }
 
 form {
