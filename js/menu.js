@@ -26,7 +26,7 @@ $(document).ready(function() {
       // $(".navbar-default .navbar-nav>li>a").css("color", "#2e2e2e");
     } else {
       $(window).scroll(function() {
-        if ($(document).scrollTop() > 150) {
+        if ($(document).scrollTop() > 50) {
           $(".navbar-default").addClass("nav-shadow")
         } else {
           $(".navbar-default").removeClass("nav-shadow");

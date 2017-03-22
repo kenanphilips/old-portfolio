@@ -17,9 +17,7 @@
 /* Colour Hex Codes
 ==================================================
   White: #fff
-  Blue: #50E3C2
   Turquoise: #50e3c2
-  Pink: #50E3C2
   Black: #2e2e2e;
 */
 
@@ -74,7 +72,14 @@ a {
 
 .color {
     color: #50E3C2;
-    font-size: 11px;
+}
+
+.h-30 {
+    height: 30px
+}
+
+.h-10 {
+    height: 10px
 }
 
 /* typography
@@ -189,6 +194,7 @@ p, a {
   height: 60px;
   width: 100%;
   transition-duration: 0.3s;
+  z-index: 1;
 }
 
 .nav-shadow {
@@ -344,7 +350,6 @@ p, a {
 .hero-button a:hover {
   text-decoration: none;
   box-shadow: 0 10px 50px rgba(0, 0, 0, 0.25);
-  top: 74.5%;
 }
 
 .hero-button a:focus, .hero-button a:active {
