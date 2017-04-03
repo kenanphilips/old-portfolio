@@ -21,7 +21,7 @@
     <script src="https://use.typekit.net/gqp3qla.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <body>
 
     <!-- Preloader -->
     <div id="preloader">
@@ -34,10 +34,12 @@
     </div>
     <!-- end Preloader -->
 
-    <div class="container-fluid">
+    <section class="home-page">
+
+      <div class="container">
 
         <!-- nav -->
-        <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+        <nav class="navbar navbar-default" id="navbar">
           <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -51,11 +53,10 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li><a class="links" href="#services">Services</a></li>
-                <li><a class="links" href="#about">About</a></li>
+                <li><a class="links" href="http://kenanphilips.com/">work</a></li>
                 <li><a class="navbar-brand cd-top logo-nav white-logo" href="#"></a><li>
-                <li><a class="links" href="#portfolio">Work</a></li>
-                <li><a class="links" href="#contact">Contact</a></li>
+                <li><a class="links" href="http://kenanphilips.com/about">about</a></li>
+                <!-- <li><a class="links" href="#contact">Let's Talk</a></li> -->
                 </li>
               </ul>
             </div><!-- /.navbar-collapse -->
@@ -63,19 +64,47 @@
         </nav>
         <!-- end nav -->
 
-    </div>
+        <div class="hero">
+          <div class="table-cell">
+              <h1 class="title-text"><span class="type"></span></h1>
+              <h5>Hi there, my name is <b>kenan philips</b></h5>
+              <ul class="social-media">
+                <a href="http://twitter.com/keyphlip"><li><i class="ion-social-twitter"></i></li></a>
+                <a href="http://linkedin.com/in/kenanphilips"><li><i class="ion-social-linkedin"></i></li></a>
+                <a href="http://dribbble.com/keyphlip"><li><i class="ion-social-dribbble"></i></li></a>
+                <a href="mailto:philipskenan@gmail.com"><li><i class="ion-email"></i></li></a>
+              </ul>
+          </div>
+        </div>
 
-    <!-- hero -->
-    <section id="home" class="hero">
-      <div class="table-cell">
-          <h1 class="title-text"><span class="type"></span></h1>
-          <h5>Hi there, my name is kenan philips</h5>
       </div>
-      <div class="hero-button">
-        <a href="#about">check out what I do</a>
+
+      <div class="projects container-fluid">
+        <div class="row">
+          <a href="#" class="project col-xs-12 col-sm-6" style="background-image: url(images/oddjobs-background.jpg);">
+            <div class="overlay">
+              <img src="images/oddjobs.svg">
+            </div>
+          </a>
+          <a href="#" class="project col-xs-12 col-sm-6" style="background-image: url(images/uppercase-background.jpg);">
+            <div class="overlay">
+              <img src="images/uppercase.svg">
+            </div>
+          </a>
+          <a href="#" class="project col-xs-12 col-sm-6" style="background-image: url(images/ppac-background.jpg);">
+            <div class="overlay">
+              <img src="images/ppacyoungadults.svg">
+            </div>
+          </a>
+          <a href="#" class="project col-xs-12 col-sm-6" style="background-image: url(images/blog-background.jpg);">
+            <div class="overlay">
+              <img src="images/blog.svg">
+            </div>
+          </a>
+        </div>
       </div>
+
     </section>
-    <!-- end hero -->
 
     <!-- services -->
     <section class="services" id="services">
@@ -143,104 +172,6 @@
     </section>
     <!-- end about -->
 
-    <!-- portfolio -->
-      <!-- main container -->
-      <section id="portfolio">
-        <div class="main-container portfolio-inner clearfix">
-            <!-- portfolio div -->
-            <div class="portfolio-div">
-                <div class="portfolio">
-                    <!-- portfolio_filter -->
-                    <div class="categories-grid wow fadeInLeft">
-                        <nav class="categories text-center">
-                            <ul class="portfolio_filter">
-                                <li><a href="" class="active" data-filter="*">All</a></li>
-                                <li><a href="" data-filter=".branding">Branding</a></li>
-                                <li><a href="" data-filter=".design">Web Design</a></li>
-                                <li><a href="" data-filter=".development">Development</a></li>
-                                <li><a href="" data-filter=".logo">Logos</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <!-- portfolio_filter -->
-
-                    <!-- portfolio_container -->
-                    <div class="no-padding portfolio_container clearfix">
-                        <!-- single work -->
-                        <div class="col-md-4 col-sm-6 development design">
-                            <a href="blog.html" class="portfolio_item">
-                                <img src="images/blog.svg" alt="image" class="img-responsive" />
-                                <div class="portfolio_item_hover">
-                                    <div class="portfolio-border clearfix">
-                                        <div class="item_info">
-                                            <span>Blog</span>
-                                            <em>Web Development / Web Design</em>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- end single work -->
-
-                        <!-- single work -->
-                        <div class="col-md-4 col-sm-12 development design">
-                            <a href="oddjobs.html" class="portfolio_item">
-                                <img src="images/oddjobs.svg" alt="image" class="img-responsive" />
-                                <div class="portfolio_item_hover">
-                                    <div class="portfolio-border clearfix">
-                                        <div class="item_info">
-                                            <span>Oddjobs</span>
-                                            <em>Web Development / Web Design / Logo</em>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- end single work -->
-
-                        <!-- single work -->
-                        <div class="col-md-4 col-sm-6 logo branding">
-                            <a href="ppacyoungadults.html" class="portfolio_item">
-                                <img src="images/ppacyoungadults.svg" alt="image" class="img-responsive" />
-                                <div class="portfolio_item_hover">
-                                    <div class="portfolio-border clearfix">
-                                        <div class="item_info">
-                                            <span>Peace Portal Young Adults</span>
-                                            <em>Logo / Branding</em>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- end single work -->
-
-                        <!-- single work -->
-                        <div class="col-md-4 col-sm-6 logo design development branding">
-                            <a href="uppercase.html" class="portfolio_item">
-                                <img src="images/uppercase.svg" alt="image" class="img-responsive" />
-                                <div class="portfolio_item_hover">
-                                    <div class="portfolio-border clearfix">
-                                        <div class="item_info">
-                                            <span>Uppercase</span>
-                                            <em>Web Development / Web Design / Logo</em>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- end single work -->
-
-                    </div>
-                    <!-- end portfolio_container -->
-                </div>
-                <!-- portfolio -->
-            </div>
-            <!-- end portfolio div -->
-        </div>
-        <!-- end main container -->
-      </section>
-    <!-- end portfolio -->
-
     <!-- contact -->
     <section class="contact" id="contact">
       <div class="table-cell">
@@ -282,7 +213,13 @@
 
     <!-- footer -->
     <section class="footer">
-
+      <a class="email" href="mailto:philipskenan@gmail.com">philipskenan@gmail.com</a>
+      <ul class="social-media">
+        <a href="http://twitter.com/keyphlip"><li><i class="ion-social-twitter"></i></li></a>
+        <a href="http://linkedin.com/in/kenanphilips"><li><i class="ion-social-linkedin"></i></li></a>
+        <a href="http://dribbble.com/keyphlip"><li><i class="ion-social-dribbble"></i></li></a>
+        <a href="mailto:philipskenan@gmail.com"><li><i class="ion-email"></i></li></a>
+      </ul>
     </section>
     <!-- end footer -->
 
