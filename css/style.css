@@ -759,6 +759,7 @@ form {
   color: #50E3C2;
   margin: 0;
   font-size: 86px;
+  line-height: 100px;
 }
 
 .bg-404 h2 {
@@ -767,7 +768,7 @@ form {
   margin-bottom: 25px;
 }
 
-.bg-404 a {
+.bg-404 .email {
   border: 1px solid #50E3C2;
   background-color: #50E3C2;
   color: #fff;
@@ -779,10 +780,38 @@ form {
   cursor: pointer;
 }
 
-.bg-404 a:hover {
+.bg-404 .email:hover {
   text-decoration: none;
   background-color: #50E3C2;
   border: 1px solid #50E3C2;
   box-shadow: 0 10px 50px rgba(0, 0, 0, 0.25);
   color: #fff;
+}
+
+.bg-404 .social-media li {
+  color: #fff;
+}
+
+.bg-404 .social-media li:hover {
+  opacity: 1 !important;
+}
+
+.bg-404 .ion-social-twitter:hover {
+  color: #1DA1F2;
+}
+
+.bg-404 .ion-social-linkedin:hover {
+  color: #0073B2;
+}
+
+.bg-404 .ion-social-dribbble:hover {
+  color: #EA4C89;
+}
+
+.bg-404 .ion-email:hover {
+  color: #50E3C2;
+}
+
+.bg-404 .social-media {
+  margin-top: 20px;
 }
