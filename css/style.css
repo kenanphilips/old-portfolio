@@ -229,11 +229,8 @@ nav .button {
   -moz-transition: all .3s;
   -o-transition: all .3s;
   margin-bottom: 5px;
-  padding: 10px 15px;
-  font-size: 12px;
-  letter-spacing: 1px;
-  border-radius: 35px;
-  border: 1px solid #000;
+  font-size: 14px;
+  letter-spacing: 4px;
   color: #000;
   text-transform: uppercase;
   font-weight: 400;
@@ -241,10 +238,7 @@ nav .button {
 
 nav .button:hover {
   text-decoration: none;
-  background-color: #50E3C2;
-  border: 1px solid #50E3C2;
-  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.25);
-  color: #fff;
+  color: #50E3C2;
 }
 
 nav .button:focus, nav .button:active {
@@ -254,10 +248,6 @@ nav .button:focus, nav .button:active {
 }
 
 #logo {
-  max-width: 45px;
-  position: relative;
-  top: -2px;
-  left: 27px;
 }
 
 .social-media {
@@ -290,6 +280,14 @@ nav .button:focus, nav .button:active {
   text-decoration: none;
 }
 
+.social-media a:last-child li {
+  padding-right: 0;
+}
+
+.social-media a:first-child li {
+  padding-left: 0;
+}
+
 @media (min-width: 414px) {
   nav .button span.text {
     display: inline;
@@ -316,7 +314,7 @@ nav .button:focus, nav .button:active {
 	height: 100%;
 	overflow-y: auto;
 	position: relative;
-	background-color: white; /* Basic background color, overwrite this in your own css. */
+	background-color: white;
 	-webkit-overflow-scrolling: touch; /* Enables momentum scrolling on iOS devices, may be removed by setting to 'auto' in your own CSS. */
 }
 
@@ -333,9 +331,12 @@ nav .button:focus, nav .button:active {
 	position: fixed;
 	overflow: hidden;
 	overflow-y: auto;
-	background-color: black; /* Basic background color, overwrite this in your own css. */
-	color: white; /* Basic colors, overwrite this in your own css. */
+	color: #000;
 	-webkit-overflow-scrolling: touch; /* Enables momentum scrolling on iOS devices, may be removed by setting to 'auto' in your own CSS. */
+  /*background-color: #50E3C2;*/
+  background-color: #fff;
+  box-shadow: inset -15px 0 33px -14px rgba(0, 0, 0, 0.25);
+  text-align: center;
 }
 
 [off-canvas*=top] {
@@ -378,6 +379,44 @@ nav .button:focus, nav .button:active {
 
 [off-canvas*=shift] {
 	z-index: 0;
+}
+
+[off-canvas] .side-nav-wrapper {
+  vertical-align: middle;
+}
+
+[off-canvas] .side-nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+[off-canvas] .side-nav-links li {
+  padding: 10px 0;
+}
+
+[off-canvas] .side-nav-links a {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+[off-canvas] .side-nav-links li a .side-logo {
+  width: 75px;
+  margin-bottom: 15px;
+}
+
+[off-canvas] a:hover {
+  text-decoration: none;
+}
+
+[off-canvas] .social-media {
+  margin-top: 15px;
 }
 
 /* Animation */
@@ -756,7 +795,7 @@ form {
 }
 
 .bg-404 h1 {
-  color: #50E3C2;
+  color: #fff;
   margin: 0;
   font-size: 86px;
   line-height: 100px;
@@ -790,26 +829,6 @@ form {
 
 .bg-404 .social-media li {
   color: #fff;
-}
-
-.bg-404 .social-media li:hover {
-  opacity: 1 !important;
-}
-
-.bg-404 .ion-social-twitter:hover {
-  color: #1DA1F2;
-}
-
-.bg-404 .ion-social-linkedin:hover {
-  color: #0073B2;
-}
-
-.bg-404 .ion-social-dribbble:hover {
-  color: #EA4C89;
-}
-
-.bg-404 .ion-email:hover {
-  color: #50E3C2;
 }
 
 .bg-404 .social-media {
