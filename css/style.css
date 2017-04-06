@@ -247,9 +247,6 @@ nav .button:focus, nav .button:active {
   text-decoration: none;
 }
 
-#logo {
-}
-
 .social-media {
   list-style: none;
   margin: 0;
@@ -263,10 +260,10 @@ nav .button:focus, nav .button:active {
   margin: 0 auto;
   padding: 0 5px;
   font-size: 20px;
-  transition: ease-in-out 0.2s all;
-  -webkit-transition: ease-in-out 0.2s all;
-  -moz-transition: ease-in-out 0.2s all;
-  -o-transition: ease-in-out 0.2s all;
+  transition: ease-in-out 0.3s all;
+  -webkit-transition: ease-in-out 0.3s all;
+  -moz-transition: ease-in-out 0.3s all;
+  -o-transition: ease-in-out 0.3s all;
   color: #000;
 }
 
@@ -389,7 +386,6 @@ nav .button:focus, nav .button:active {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: inline-block;
 }
 
 [off-canvas] .side-nav-links li {
@@ -401,18 +397,24 @@ nav .button:focus, nav .button:active {
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 2px;
-  color: #000;
-  text-transform: uppercase;
-  font-weight: 100;
+  font-weight: 400;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  padding: 0 0 .15rem;
 }
 
-[off-canvas] .side-nav-links li a .side-logo {
+[off-canvas] .side-nav-wrapper a .side-logo {
   width: 75px;
   margin-bottom: 15px;
-}
-
-[off-canvas] a:hover {
-  text-decoration: none;
+  display: inline-block;
+  margin-top: 13px;
 }
 
 [off-canvas] .social-media {
@@ -464,6 +466,47 @@ nav .button:focus, nav .button:active {
 	}
 }
 
+/* Nav Link Hover Effect */
+
+@media (min-width: 832px) {
+    .nav--top > ul > li {
+        margin: 0 0 0 .75rem;
+        display: inline-block;
+    }
+}
+
+[off-canvas] .side-nav-links a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: -2px;
+    background: #50E3C2;
+    height: 2px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+[off-canvas] .side-nav-links a:hover:before,
+[off-canvas] .side-nav-links a:focus:before,
+[off-canvas] .side-nav-links a:active:before,
+[off-canvas] .side-nav-links li.active a:before {
+    right: 0;
+}
+
+[off-canvas] .side-nav-links a:hover,
+[off-canvas] .side-nav-links a:focus,
+[off-canvas] .side-nav-links a:active,
+[off-canvas] .side-nav-links li.active a {
+    text-decoration: none;
+    color: #50E3C2;
+}
+
 /* hero
 ==================================================*/
 
@@ -507,8 +550,10 @@ nav .button:focus, nav .button:active {
     100% { opacity:1; }
 }
 
-.title-text {
-  margin-left: 30px;
+@media only screen and (max-width: 375px) {
+  .type {
+    font-size: 55px;
+  }
 }
 
 /* projects
