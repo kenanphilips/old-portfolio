@@ -24,7 +24,7 @@ $(window).load(function () {
 
     // active links
     $(function() {
-       $("[off-canvas] .side-nav-links li").click(function() {
+       $("[off-canvas] .side-nav-links li a").click(function() {
           // remove classes from all
           $("li").removeClass("active");
           // add class to the one we clicked
