@@ -519,14 +519,14 @@ nav .button:focus, nav .button:active {
 [off-canvas] .side-nav-links a:hover:before,
 [off-canvas] .side-nav-links a:focus:before,
 [off-canvas] .side-nav-links a:active:before,
-[off-canvas] .side-nav-links li.active a:before {
+.active {
     right: 0;
 }
 
 [off-canvas] .side-nav-links a:hover,
 [off-canvas] .side-nav-links a:focus,
 [off-canvas] .side-nav-links a:active,
-[off-canvas] .side-nav-links li.active a {
+.active {
     text-decoration: none;
     color: #50E3C2;
 }
