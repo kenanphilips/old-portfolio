@@ -24,7 +24,12 @@ $(window).load(function () {
 
     // active links
     $(function() {
-      $('.side-nav-links li a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+       $("[off-canvas] .side-nav-links li").click(function() {
+          // remove classes from all
+          $("li").removeClass("active");
+          // add class to the one we clicked
+          $(this).addClass("active");
+       });
     });
 
     $('.portfolio_filter a').click(function () {
