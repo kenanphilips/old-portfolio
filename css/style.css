@@ -102,6 +102,17 @@ a {
   background-repeat: repeat;
 }
 
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.fixed {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+}
+
 /* typography
 ==================================================*/
 
@@ -215,7 +226,7 @@ nav {
   line-height: 60px;
   font-size: 24px;
   font-weight: 400;
-  text-align: center;
+  right: 0;
 }
 
 nav .button {
@@ -253,6 +264,7 @@ nav .button:focus, nav .button:active {
   padding: 0;
   text-align: center;
   width: 100%;
+  margin-top: -5px;
 }
 
 .social-media li {
@@ -469,7 +481,7 @@ nav .button:focus, nav .button:active {
 /* Nav Link Hover Effect */
 
 @media (min-width: 832px) {
-    .nav--top > ul > li {
+    .side-nav-links > ul > li {
         margin: 0 0 0 .75rem;
         display: inline-block;
     }
@@ -552,7 +564,7 @@ nav .button:focus, nav .button:active {
 
 @media only screen and (max-width: 375px) {
   .type {
-    font-size: 55px;
+    font-size: 50px;
   }
 }
 
@@ -572,7 +584,6 @@ nav .button:focus, nav .button:active {
   position: relative;
   border: none;
   height: 300px;
-  overflow: hidden;
 }
 
 .overlay {
@@ -613,18 +624,17 @@ nav .button:focus, nav .button:active {
 /* services
 ==================================================*/
 .services {
-  background: #fff;
+  background: transparent;
   width: 100%;
   height: 100vh;
   display: table;
-  padding-top: 60px;
+  padding: 60px 0;
 }
 
 .services-title h1 {
   text-transform: none;
   font-size: 60px;
   text-align: center;
-  padding-bottom: 50px;
   color: #2e2e2e;
 }
 
@@ -672,7 +682,7 @@ nav .button:focus, nav .button:active {
 /* about
 ==================================================*/
 .about {
-  background: #fff;
+  background: transparent;
   width: 100%;
   height: 100vh;
   display: table;
@@ -736,11 +746,7 @@ div.about-text {
 /* contact section
 ==================================================*/
 #contact {
-  background-image: url("../images/pattern.svg");
-  background-size: 800px;
-  background-repeat: repeat;
   width: 100%;
-  height: 100vh;
   display: table;
   padding: 60px 0;
 }
@@ -809,7 +815,7 @@ form {
 
 .footer .email {
   color: #2e2e2e;
-  font-size;
+  padding-bottom: 15px;
 }
 
 .footer .email:hover {
@@ -819,6 +825,7 @@ form {
 
 .footer .social-media {
   vertical-align: middle;
+  margin-top: 5px;
 }
 
 /* 404 page
@@ -833,9 +840,7 @@ form {
   height: 100vh;
 }
 
-.table-cell {
-  display: table-cell;
-  vertical-align: middle;
+.bg-404 .table-cell {
   text-align: center;
 }
 

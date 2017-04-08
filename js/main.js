@@ -22,6 +22,11 @@ $(window).load(function () {
         filter: '*',
     });
 
+    // active links
+    $(function() {
+      $('.side-nav-links li a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+    });
+
     $('.portfolio_filter a').click(function () {
         $('.portfolio_filter .active').removeClass('active');
         $(this).addClass('active');

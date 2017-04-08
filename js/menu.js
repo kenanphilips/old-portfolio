@@ -1,4 +1,4 @@
-// $(document).ready(function() {
+$(document).ready(function() {
 //   $('body').scrollspy({ target: '#navbar', offset: 51 });
 //
 //   $('[data-spy="scroll"]').each(function () {
@@ -35,4 +35,4 @@
 //     }
 //   });
 //
-// });
+});
