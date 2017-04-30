@@ -7,7 +7,7 @@ $(window).load(function () {
         'overflow': 'visible'
     });
 
-    //typed.js
+    // typed.js
     $(".type").typed({
       strings: ["design. ^1000", "develop. ^1000", "create. ^1000", "build. ^1000"],
       typeSpeed: 30,
@@ -16,58 +16,17 @@ $(window).load(function () {
       loop: true
     });
 
-    //  isotope
-    var $container = $('.portfolio_container');
-    $container.isotope({
-        filter: '*',
-    });
-
-    // active links
-    $(function() {
-       $("[off-canvas] .side-nav-links li a").click(function() {
-          // remove classes from all
-          $("li").removeClass("active");
-          // add class to the one we clicked
-          $(this).addClass("active");
-       });
-    });
-
-    $('.portfolio_filter a').click(function () {
-        $('.portfolio_filter .active').removeClass('active');
-        $(this).addClass('active');
-
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-            filter: selector,
-            animationOptions: {
-                duration: 500,
-                animationEngine: "jquery"
-            }
-        });
-        return false;
-    });
-
-    // back to top
-    var offset = 300,
-        offset_opacity = 1200,
-        scroll_top_duration = 700,
-        $back_to_top = $('.cd-top');
-
-    //hide or show the "back to top" link
-    $(window).scroll(function () {
-        ($(this).scrollTop() > offset) ? $back_to_top.addClass('cd-is-visible'): $back_to_top.removeClass('cd-is-visible cd-fade-out');
-        if ($(this).scrollTop() > offset_opacity) {
-            $back_to_top.addClass('cd-fade-out');
-        }
-    });
-
-    //smooth scroll to top
-    $back_to_top.on('click', function (event) {
-        event.preventDefault();
-        $('body,html').animate({
-            scrollTop: 0,
-        }, scroll_top_duration);
-    });
+    var $elements = $('.screenshot-one, .screenshot-two, .screenshot-three, .screenshot-four');
+    function anim_loop(index) {
+      $elements.eq(index).fadeIn(800, function() {
+        var $self = $(this);
+        setTimeout(function() {
+            $self.fadeOut(800);
+            anim_loop((index + 1) % $elements.length);
+        }, 5000);
+      });
+    }
+    anim_loop(0); // start with the first element
 
     ( function ( $ ) {
         // Create a new instance of Slidebars
