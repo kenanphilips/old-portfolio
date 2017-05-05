@@ -13,7 +13,6 @@
 
     <!-- main css -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/project.css" rel="stylesheet">
 
     <!-- modernizr -->
     <script src="js/modernizr.js"></script>
@@ -23,6 +22,7 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
   <body>
+
     <!-- Preloader -->
     <div id="preloader">
         <div class="pre-container">
@@ -34,64 +34,118 @@
     </div>
     <!-- end Preloader -->
 
-    <div class="project-title">
-      <h1>blog</h1>
+    <div off-canvas="slidebar-1 left reveal" class="side-nav">
+      <div class="side-nav-wrapper">
+
+        <a href="/"><div class="side-logo"></div></a>
+
+
+        <ul class="side-nav-links">
+          <li><a href="/">work</a></li>
+          <li><a href="/about">about me</a></li>
+          <li><a href="mailto:philipskenan@gmail.com">email me!</a></li>
+        </ul>
+
+        <ul class="social-media">
+          <a href="http://twitter.com/kenanphilips"><li><i class="ion-social-twitter"></i></li></a>
+          <a href="http://linkedin.com/in/kenanphilips"><li><i class="ion-social-linkedin"></i></li></a>
+          <a href="http://dribbble.com/kenanphilips"><li><i class="ion-social-dribbble"></i></li></a>
+          <a href="mailto:philipskenan@gmail.com"><li><i class="ion-email"></i></li></a>
+        </ul>
+      </div>
     </div>
 
-    <!-- main-container -->
-    <div class="container main-container">
-      <div class="col-md-12 feature">
-        <img src="images/blog1.png" alt="" class="img-responsive blog-logo" />
-        <div class="h-30"></div>
-      </div>
+    <div class="body-wrapper" canvas>
 
-      <div class="col-md-12">
-          <h2 class="text-uppercase">blog</h2>
-          <h5 >Web Development / Web Design</h5>
-          <div class="h-10"></div>
-      </div>
+      <nav>
+      	<div class="container">
+      		<div class="row">
+      			<div class="col xs-100">
 
-      <div class="col-md-9">
-          <p class="project-desc">This is one of my first projects as a developer that I built on throughout my time at school learning Ruby on Rails. The website is built completely on Rails and can act as a functional blog. Although this site is not yet responsive due to other priorities, it's still something I'm proud of design-wise. The site very modern and clean and it definitely captures my design-style perfectly. I decided to brand it simply as BLOG to go along with the minimalist look.</p><br>
-          <a class="site-link" href="http://kenanphilips-blog.herokuapp.com" target="_blank">Check it out here</a>
-      </div>
+      				<div class="float-left">
+      					<span class="button js-toggle-left-slidebar"><i class="ion-navicon-round"></i> <span class="text">Menu</span></span>
+      				</div>
 
-      <div class="col-md-3">
-          <ul class="cat-ul">
+      				<div class="float-right">
+                <ul class="social-media">
+                  <a href="http://twitter.com/kenanphilips"><li><i class="ion-social-twitter"></i></li></a>
+                  <a href="http://linkedin.com/in/kenanphilips"><li><i class="ion-social-linkedin"></i></li></a>
+                  <a href="http://dribbble.com/kenanphilips"><li><i class="ion-social-dribbble"></i></li></a>
+                  <a href="mailto:philipskenan@gmail.com"><li><i class="ion-email"></i></li></a>
+                </ul>
+      				</div>
+
+      			</div>
+      		</div>
+      	</div>
+      </nav>
+
+      <section class="home-page">
+        <div class="container">
+          <div class="hero">
+            <img src="images/"
+          </div>
+
+          <div class="col-md-4 project-desc">
+            <h3>Blog</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <hr>
+            <ul class="tools-used">
               <h4>tools used</h4>
-              <li><i class="ion-android-radio-button-off"></i> Ruby on Rails</li>
-              <li><i class="ion-android-radio-button-off"></i> HTML</li>
-              <li><i class="ion-android-radio-button-off"></i> SCSS</li>
-              <li><i class="ion-android-radio-button-off"></i> jQuery</li>
-              <li><i class="ion-android-radio-button-off"></i> PostgreSQL</li>
-              <li><i class="ion-android-radio-button-off"></i> Git</li>
-          </ul>
-          <div class="h-10"></div>
-      </div>
-    </div>
-    <!-- end main-container -->
+              <div class="col-sm-6">
+                <li><i class="ion-record"></i> Ruby on Rails</li>
+                <li><i class="ion-record"></i> Sass</li>
+                <li><i class="ion-record"></i> Bootstrap 3</li>
+                <li><i class="ion-record"></i> Git</li>
+              </div>
+              <div class="col-sm-6">
+                <li><i class="ion-record"></i> HTML 5</li>
+                <li><i class="ion-record"></i> jQuery</li>
+                <li><i class="ion-record"></i> PostgreSQL</li>
+                <li><i class="ion-record"></i> AJAX</li>
+              </div>
+            </ul>
+          </div>
 
-    <!-- footer -->
-    <section class="footer">
-      <a class="email" href="mailto:philipskenan@gmail.com">philipskenan@gmail.com</a>
-      <ul class="social-media">
-        <a href="http://twitter.com/keyphlip"><li><i class="ion-social-twitter"></i></li></a>
-        <a href="http://linkedin.com/in/kenanphilips"><li><i class="ion-social-linkedin"></i></li></a>
-        <a href="http://dribbble.com/keyphlip"><li><i class="ion-social-dribbble"></i></li></a>
-        <a href="mailto:philipskenan@gmail.com"><li><i class="ion-email"></i></li></a>
-      </ul>
-    </section>
-    <!-- end footer -->
+          <div class="col-md-8">
+            <div class="mockup-responsive">
+              <img class="desktop-background" src="images/oddjobs-desktop.png">
+              <img class="screenshot screenshot-one" src="images/blog-1.png">
+              <img class="screenshot screenshot-two" src="images/blog-2.png">
+              <img class="screenshot screenshot-three" src="images/blog-3.png">
+              <img class="screenshot screenshot-four" src="images/blog-4.png">
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- footer -->
+      <section class="footer">
+        <a class="email" href="mailto:philipskenan@gmail.com">philipskenan@gmail.com</a>
+        <ul class="social-media">
+          <a href="http://twitter.com/kenanphilips"><li><i class="ion-social-twitter"></i></li></a>
+          <a href="http://linkedin.com/in/kenanphilips"><li><i class="ion-social-linkedin"></i></li></a>
+          <a href="http://dribbble.com/kenanphilips"><li><i class="ion-social-dribbble"></i></li></a>
+          <a href="mailto:philipskenan@gmail.com"><li><i class="ion-email"></i></li></a>
+        </ul>
+      </section>
+      <!-- end footer -->
+
+    </div>
 
     <!-- jQuery -->
     <script src="js/jquery-2.1.1.js"></script>
     <!--  plugins -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/menu.js"></script>
     <script src="js/typed.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/slidebars.js"></script>
+    <script src="js/scripts.js"></script>
 
     <!-- custom script -->
     <script src="js/main.js"></script>
+
   </body>
 </html>
