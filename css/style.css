@@ -987,6 +987,11 @@ form {
 /* about page */
 
 @media (max-width: 768px) {
+
+  .services .col-md-4 {
+    padding: 0;
+  }
+
   .mobile {
     display: inherit;
   }
@@ -1004,7 +1009,7 @@ form {
   }
 
   .about .col-md-6 {
-    padding: 0 50px;
+    padding: 0;
     margin-top: 50px;
   }
 
@@ -1018,11 +1023,86 @@ form {
 }
 
 @media (max-width: 414px) {
-  .about-title h1, .services-title h1 {
+  .about-title h1, .services-title h1, .contact-title {
     font-size: 40px;
   }
 
-  .form-control {
+  .form-control, #contact-button {
     width: 100%;
+  }
+}
+
+/* project pages */
+
+@media (max-width: 768px) {
+  .tools-used .col-sm-6 {
+    margin-bottom: 60px;
+  }
+
+  .mockup-responsive img {
+    width: 100%;
+  }
+
+  .site-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .ppac-mockup {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 414px) {
+  .screenshot {
+    width: 70% !important;
+    top: 70.5%;
+  }
+
+  .ppac-screenshot {
+    top: 46.5%;
+  }
+}
+
+@media (max-width: 375px) {
+  .screenshot {
+    top: 71%;
+  }
+}
+
+@media (max-width: 360px) {
+  .blog-screenshot {
+    top: 72%;
+  }
+}
+
+@media (max-width: 320px) {
+  .oddjobs-title, .uppercase-title, .ppac-title, .blog-title {
+    font-size: 40px;
+  }
+
+  .screenshot {
+    top: 78.5%;
+    width: 68.5% !important;
+  }
+
+  .col-xs-6 {
+    width: 100% !important;
+  }
+
+  .tools-used .col-sm-6 {
+    margin-bottom: 0;
+  }
+
+  .desktop-background {
+    margin-top: 50px;
+  }
+
+  .blog-screenshot {
+    top: 79.8%;
+  }
+
+  .ppac-screenshot {
+    top: 60.5%;
   }
 }
